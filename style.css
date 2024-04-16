@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,900);
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+.wrapper {
+  width: 336px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+
+.top {
+  height: 28px;
+  background: #ffdc40;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 13px;
+}
+
+.title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.filter {
+  text-align: right;
+  margin: 0 30px 11px 0;
+}
+
+.filter__btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.filter-sv {
+  fill: #c4c4c4;
+  transition: 0.3s;
+}
+
+.filter-sv:hover {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.tasks {
+  border: 1px solid #c4c4c4;
+  margin: 0 22px 18px 28px;
+  border-radius: 10px;
+  /* padding: 10px 0; */
+}
+
+.task {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  height: 20px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.task:last-child {
+  margin-bottom: 0;
+}
+
+.task__content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  padding: 2px 30px 2px 27px;
+}
+
+.inp {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  padding: 12px 10px;
+}
+
+.remove {
+  position: absolute;
+  top: 1px;
+  right: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.remove-sv {
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.remove-sv:hover {
+  fill: rgba(131, 58, 224, 1);
+}
+
+.add {
+  position: relative;
+  display: block;
+  width: 170px;
+  margin: 0 auto 19px;
+  border: none;
+  padding: 14px 0 14px 20px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  background: #833ae0;
+  border-radius: 71px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: #9953f1;
+  border-radius: 71px;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.add:hover {
+  background: #6629b6;
+  padding-right: 50px;
+}
+
