@@ -4,9 +4,15 @@ const text = document.querySelector(".task__content");
 const btnAdd = document.querySelector(".add");
 
 function addNewElement() {
-  tasksBox.style.padding = "10px 0";
+  tasksBox.style.padding = '10px 0';
+  tasksBox.style.height = 'auto';
+
   const tempInp = document.createElement("li");
+  tempInp.style.wordWrap = 'break-word';
+  tempInp.style.marginBottom = '35px';
+  tempInp.style.width =  '260px'
   tempInp.classList.add("task");
+
   tempInp.innerHTML = `<p class="task__content">${input.value}</p>
         <button onclick="this.parentElement.remove()" class="remove">
             <svg class="remove-sv" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

@@ -16,8 +16,7 @@ body {
   font-family: "Roboto";
 }
 
-ul,
-li {
+ul, li {
   list-style: none;
 }
 
@@ -72,7 +71,6 @@ input {
   border: 1px solid #c4c4c4;
   margin: 0 22px 18px 28px;
   border-radius: 10px;
-  /* padding: 10px 0; */
 }
 
 .task {
